@@ -5,3 +5,17 @@ spring:
   #配置文件放置的真实路径
   messages:
     basename: i18n.login
+# 日期格式
+  mvc:
+    format:
+      date: yyyy-MM-dd
+
+
+
+server:
+  #端口
+  port: 80
+  #虚拟目录
+  servlet:
+    context-path: /tian
+

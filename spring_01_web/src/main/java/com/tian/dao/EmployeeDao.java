@@ -66,4 +66,8 @@ public class EmployeeDao {
 
         employeeMap.put(employee.getId(),employee);
     }
+
+    public void deleteEmp(Integer id){
+        employeeMap.remove(id);
+    }
 }
