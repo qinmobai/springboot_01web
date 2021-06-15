@@ -66,15 +66,13 @@ public class EmployeeController {
 
     @PostMapping("/updateEmp")
     public String updateEmp(Employee employee){
-        System.out.println("employee =>" +employee);
         employeeMapper.update(employee);
-        return "redirect:emps";
+        return "redirect:/emps";
     }
 
     @GetMapping("/delEmp/{id}")
-    public String delEmp(@PathVariable("id")int id){
-        System.out.println("id = >" + id);
+    public String delEmp(@PathVariable("id") Integer id){
         employeeMapper.deleteEmp(id);
-        return "redirect:emps";
+        return "redirect:/emps";
     }
 }
