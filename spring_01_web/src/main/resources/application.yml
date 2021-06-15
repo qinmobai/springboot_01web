@@ -10,6 +10,15 @@ spring:
     format:
       date: yyyy-MM-dd
 
+  datasource:
+    username: root
+    password: suyan147258
+    url: jdbc:mysql://localhost:3306/springboot?userUnicode=true&charcterEncoding=utf-8
+    driver-class-name: com.mysql.jdbc.Driver
+#整合mybatis
+mybatis:
+  type-aliases-package: com.tian.pojo
+  mapper-locations: classpath:com/tian/mapper/*.xml
 
 
 server:

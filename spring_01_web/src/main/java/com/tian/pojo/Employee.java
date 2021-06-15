@@ -21,15 +21,6 @@ public class Employee {
     @Email
     private String email;
     private Integer gender;
-    private Department department;
     private Date birthday;
-
-    public Employee(Integer id, String name, String email, Integer gender, Department department) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.gender = gender;
-        this.department = department;
-        this.birthday = new Date();
-    }
+    private Department department;
 }

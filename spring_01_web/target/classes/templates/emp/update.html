@@ -75,7 +75,7 @@
                     <label>部门</label>
                     <!--我们在controller接收的是一个Employee,所以我们需要提交的是其中的一个属性-->
                     <select class="form-control"  name="department.id">
-                        <option th:each="dept:${departments}" th:selected="${dept.getId()==emp.getDepartment().getId()}" th:text="${dept.getDeptName()}" th:value="${dept.getId()}"></option>
+                        <option th:each="dept:${departments}" th:selected="${dept.getId()==emp.getDepartment().getId()}" th:text="${dept.getName()}" th:value="${dept.getId()}"></option>
                     </select>
                 </div>
 

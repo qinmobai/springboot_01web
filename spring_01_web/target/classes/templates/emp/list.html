@@ -70,11 +70,11 @@
 									<td th:text="${emp.getName()}"></td>
 									<td th:text="${emp.getEmail()}"></td>
 									<td th:text="${emp.getGender()==0?'女':'男'}"></td>
-									<td th:text="${emp.department.getDeptName()}"></td>
-									<td th:text="${#dates.format(emp.getBirthday(),'yyyy-MM-dd HH:mm:ss')}"></td>
+									<td th:text="${emp.getDepartment().getName()}"></td>
+									<td th:text="${#dates.format(emp.getBirthday(),'yyyy-MM-dd')}"></td>
 									<td>
 										<a class="btn btn-sm btn-primary" th:href="@{/updateEmp/}+${emp.getId()}">编辑</a>
-										<button class="btn btn-sm btn-danger" th:href="@{/delEmp/}+${emp.getId()}">删除</button>
+										<a class="btn btn-sm btn-danger" th:href="@{/delEmp/}+${emp.getId()}">删除</a>
 									</td>
 								</tr>
 							</tbody>
